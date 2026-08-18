@@ -472,22 +472,38 @@ export default function Home() {
     <div className="relative z-10 flex h-screen w-full flex-col justify-between p-6 md:p-12">
 
       {/* TOP */}
-      <div className="flex w-full items-center justify-center">
-        <img
-          src="/logo-blanc.svg"
-          alt="The Labyrinth"
-          className="
-            h-24
-            w-24
-            object-contain
-            opacity-90
-            transition-opacity
-            hover:opacity-100
-            md:h-32
-            md:w-32
-          "
-        />
-      </div>
+      <div className="flex w-full flex-col items-center justify-center gap-3">
+  <img
+    src="/logo-blanc.svg"
+    alt="The Labyrinth"
+    className="
+      h-24
+      w-24
+      object-contain
+      opacity-90
+      transition-opacity
+      hover:opacity-100
+      md:h-32
+      md:w-32
+    "
+  />
+
+  <p className="cursor-pointer transition-colors hover:text-white">
+    <span
+      className="
+        inline-block
+        bg-white/90
+        px-1
+        py-1
+        text-black
+      "
+    >
+      Ingénierie numérique, Conseil stratégique & IA appliquée.
+    </span>
+  </p>
+</div>
+  
+  
 
       {/* CENTER */}
       <div className="flex flex-1 items-center justify-center">
@@ -522,7 +538,7 @@ export default function Home() {
 
               <p className="text-sm uppercase tracking-wider md:text-base">
                 <span className="font-medium text-white">
-                  Nathan ZELI
+                  Jonathan ZELI
                 </span>
 
                 <span className="mx-3 opacity-20">
