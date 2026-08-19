@@ -12,7 +12,7 @@ export default function Home() {
 
     const gl =
       (canvas.getContext("webgl") ||
-      canvas.getContext("experimental-webgl")) as WebGLRenderingContext | null;
+        canvas.getContext("experimental-webgl")) as WebGLRenderingContext | null;
 
     if (!gl) {
       console.error("WebGL n'est pas supporté par ce navigateur.");
@@ -237,9 +237,9 @@ export default function Home() {
       gl!.ARRAY_BUFFER,
       new Float32Array([
         -1, -1,
-         1, -1,
-        -1,  1,
-         1,  1,
+        1, -1,
+        -1, 1,
+        1, 1,
       ]),
       gl!.STATIC_DRAW
     );
@@ -297,7 +297,7 @@ export default function Home() {
 
     function resizeCanvas() {
       const currentCanvas = getCanvas();
-      
+
       const width =
         currentCanvas.clientWidth ||
         window.innerWidth;
@@ -376,7 +376,7 @@ export default function Home() {
 
     function render(time: number) {
       const currentCanvas = getCanvas();
-      
+
       // Mise à jour des dimensions si nécessaire
       resizeCanvas();
 
@@ -454,29 +454,29 @@ export default function Home() {
   }, []);
 
   return (
-  <main className="relative h-screen w-full overflow-hidden bg-black text-white">
+    <main className="relative h-screen w-full overflow-hidden bg-black text-white">
 
-    {/* =========================================
+      {/* =========================================
         BACKGROUND SHADER
     ========================================= */}
-    <div className="absolute inset-0 z-0 h-full w-full">
-      <canvas
-        ref={canvasRef}
-        className="block h-full w-full"
-      />
-    </div>
+      <div className="absolute inset-0 z-0 h-full w-full">
+        <canvas
+          ref={canvasRef}
+          className="block h-full w-full"
+        />
+      </div>
 
-    {/* =========================================
+      {/* =========================================
         MAIN CONTENT
     ========================================= */}
-    <div className="relative z-10 flex h-screen w-full flex-col justify-between p-6 md:p-12">
+      <div className="relative z-10 flex h-screen w-full flex-col justify-between p-6 md:p-12">
 
-      {/* TOP */}
-      <div className="flex w-full flex-col items-center justify-center gap-3">
-  <img
-    src="/logo-blanc.svg"
-    alt="The Labyrinth"
-    className="
+        {/* TOP */}
+        <div className="flex w-full flex-col items-center justify-center gap-3">
+          <img
+            src="/logo-blanc.svg"
+            alt="The Labyrinth"
+            className="
       h-24
       w-24
       object-contain
@@ -486,42 +486,42 @@ export default function Home() {
       md:h-32
       md:w-32
     "
-  />
+          />
 
-  <p className="cursor-pointer transition-colors hover:text-white">
-    <span
-      className="
+          <p className="cursor-pointer transition-colors hover:text-white">
+            <span
+              className="
         inline-block
         bg-white/90
         px-1
         py-1
         text-black
       "
-    >
-      Ingénierie numérique, Conseil stratégique & IA appliquée.
-    </span>
-  </p>
-</div>
-  
-  
+            >
+              Ingénierie numérique, Conseil stratégique & IA appliquée.
+            </span>
+          </p>
+        </div>
 
-      {/* CENTER */}
-      <div className="flex flex-1 items-center justify-center">
 
-        <div
-          className="
+
+        {/* CENTER */}
+        <div className="flex flex-1 items-center justify-center">
+
+          <div
+            className="
             mx-auto
             w-full
             max-w-4xl
             text-center
             [text-shadow:0_2px_10px_rgba(0,0,0,0.8),0_0_20px_rgba(0,0,0,1)]
           "
-        >
+          >
 
-          <div className="space-y-6">
+            <div className="space-y-6">
 
-            <div
-              className="
+              <div
+                className="
                 mb-8
                 text-[10px]
                 uppercase
@@ -530,52 +530,54 @@ export default function Home() {
                 opacity-50
                 md:text-xs
               "
-            >
-              L'ÉQUIPE CORE
-            </div>
+              >
+                L'ÉQUIPE CORE
+              </div>
 
-            <div className="space-y-4">
+              <div className="space-y-4">
 
-              <p className="text-sm uppercase tracking-wider md:text-base">
-                <span className="font-medium text-white">
-                  Jonathan ZELI
-                </span>
+                <p className="text-sm uppercase tracking-wider md:text-base">
+                  <span className="font-medium text-white">
+                    Jonathan ZELI
+                  </span>
 
-                <span className="mx-3 opacity-20">
+                  <span className="mx-3 opacity-20">
                   //
-                </span>
+                  </span>
 
-                <span className="text-zinc-400">
-                  Commercial
-                </span>
-              </p>
+                  <span className="text-zinc-400">
+                    Commercial
+                  </span>
+                </p>
 
-              <p className="text-sm uppercase tracking-wider md:text-base">
-                <span className="font-medium text-white">
-                  Sylvère KOBA
-                </span>
+                <p className="text-sm uppercase tracking-wider md:text-base">
+                  <span className="font-medium text-white">
+                    Sylvère KOBA
+                  </span>
 
-                <span className="mx-3 opacity-20">
+                  <span className="mx-3 opacity-20">
                   //
-                </span>
+                  </span>
 
-                <span className="text-zinc-400">
-                  Ingénieur Réseau
-                </span>
-              </p>
-              <p className="text-sm uppercase tracking-wider md:text-base">
-                <span className="font-medium text-white">
-                  Modeste KOUASSI
-                </span>
+                  <span className="text-zinc-400">
+                    Ingénieur Réseau
+                  </span>
+                </p>
+                <p className="text-sm uppercase tracking-wider md:text-base">
+                  <span className="font-medium text-white">
+                    Modeste KOUASSI
+                  </span>
 
-                <span className="mx-3 opacity-20">
+                  <span className="mx-3 opacity-20">
                   //
-                </span>
+                  </span>
 
-                <span className="text-zinc-400">
-                  Architecte - Programmeur
-                </span>
-              </p>
+                  <span className="text-zinc-400">
+                    Architecte - Programmeur
+                  </span>
+                </p>
+
+              </div>
 
             </div>
 
@@ -583,11 +585,9 @@ export default function Home() {
 
         </div>
 
-      </div>
-
-      {/* BOTTOM */}
-      <div
-        className="
+        {/* BOTTOM */}
+        <div
+          className="
           mx-auto
           flex
           w-full
@@ -597,10 +597,10 @@ export default function Home() {
           text-center
           [text-shadow:0_2px_10px_rgba(0,0,0,0.8),0_0_20px_rgba(0,0,0,1)]
         "
-      >
+        >
 
-        <div
-          className="
+          <div
+            className="
             mb-10
             space-y-2
             text-[10px]
@@ -610,34 +610,34 @@ export default function Home() {
             opacity-90
             md:text-xs
           "
-        >
-          <p className="cursor-pointer transition-colors hover:text-white">
-            <span className="
+          >
+            <p className="cursor-pointer transition-colors hover:text-white">
+              <span className="
               bg-white/90
               px-1 py-1
               text-black
               inline-block
             ">
-              contact@thelabyrinth.africa
-            </span>
-          </p>
+                contact@thelabyrinth.africa
+              </span>
+            </p>
 
-          <span className="
+            <span className="
             bg-white/90
             px-1 py-1
             text-black
             inline-block
           ">
-            +225 01 01 01 4650
-          </span>
+              +225 01 01 01 4650
+            </span>
 
-          <p>
-            Côte d'Ivoire, Abidjan - 2 Plateaux Vallon
-          </p>
-        </div>
+            <p>
+              Côte d'Ivoire, Abidjan - 2 Plateaux Vallon
+            </p>
+          </div>
 
-        <div
-          className="
+          <div
+            className="
             pb-2
             text-[9px]
             uppercase
@@ -647,14 +647,14 @@ export default function Home() {
             md:text-[10px]
             text-white
           "
-        >
-          @2026 Powered by The Labyrinth
+          >
+            @2026 Powered by The Labyrinth
+          </div>
+
         </div>
 
       </div>
 
-    </div>
-
-  </main>
-);
+    </main>
+  );
 }
