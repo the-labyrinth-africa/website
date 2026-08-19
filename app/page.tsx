@@ -563,7 +563,6 @@ export default function Home() {
                   Ingénieur Réseau
                 </span>
               </p>
-
               <p className="text-sm uppercase tracking-wider md:text-base">
                 <span className="font-medium text-white">
                   Modeste KOUASSI
