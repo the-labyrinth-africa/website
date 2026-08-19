@@ -488,7 +488,7 @@ export default function Home() {
     "
           />
 
-          <p className="cursor-pointer transition-colors hover:text-white">
+          <p className="cursor-pointer text-center transition-colors hover:text-white">
             <span
               className="
         inline-block
@@ -611,7 +611,7 @@ export default function Home() {
             md:text-xs
           "
           >
-            <p className="cursor-pointer transition-colors hover:text-white">
+            <p className="cursor-pointer text-center transition-colors hover:text-white">
               <span className="
               bg-white/90
               px-1 py-1
@@ -626,12 +626,13 @@ export default function Home() {
             bg-white/90
             px-1 py-1
             text-black
+            text-center
             inline-block
           ">
               +225 01 01 01 4650
             </span>
 
-            <p>
+            <p className="text-center">
               Côte d'Ivoire, Abidjan - 2 Plateaux Vallon
             </p>
           </div>
