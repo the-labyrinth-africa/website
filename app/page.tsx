@@ -649,7 +649,7 @@ export default function Home() {
             text-white
           "
           >
-            @2026 Powered by The Labyrinth
+            @2026 Powered by <strong>The Labyrinth</strong>
           </div>
 
         </div>
