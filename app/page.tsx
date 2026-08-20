@@ -740,7 +740,7 @@ export default function Home() {
 
       <span className="text-zinc-400">
 
-        Site internet
+        Site Web
 
       </span>
 
@@ -774,7 +774,7 @@ export default function Home() {
 
       <span className="text-zinc-400">
 
-        Site internet
+        Site Web
 
       </span>
 
@@ -808,7 +808,7 @@ export default function Home() {
 
       <span className="text-zinc-400">
 
-        Site internet
+        Site Web
 
       </span>
 
