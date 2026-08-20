@@ -757,7 +757,7 @@ export default function Home() {
               rel="noopener noreferrer"
               className="transition-colors hover:text-[#EFBF04]"
             >
-              Ayou SARL
+              Ayou Consult
             </a>
           </span>
 
