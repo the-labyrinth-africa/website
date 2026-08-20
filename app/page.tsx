@@ -506,83 +506,116 @@ export default function Home() {
 
 
         {/* CENTER */}
-<div className="flex flex-1 items-center justify-center px-4">
+        <div className="flex flex-1 items-center justify-center px-4">
+
+          <div
+            className="
+            mx-auto
+            grid
+            w-full
+            max-w-6xl
+            grid-cols-1
+            gap-12
+            text-center
+            [text-shadow:0_2px_10px_rgba(0,0,0,0.8),0_0_20px_rgba(0,0,0,1)]
+            md:grid-cols-3
+            md:gap-8
+          "
+          >
+
+            {/* =========================
+
+    NOS PRODUITS
+
+========================= */}
+
+<div className="flex flex-col items-start text-left">
 
   <div
+
     className="
-      mx-auto
-      grid
-      w-full
-      max-w-6xl
-      grid-cols-1
-      gap-12
-      text-center
-      [text-shadow:0_2px_10px_rgba(0,0,0,0.8),0_0_20px_rgba(0,0,0,1)]
-      md:grid-cols-3
-      md:gap-8
+
+      mb-8
+
+      text-[10px]
+
+      uppercase
+
+      tracking-[0.4em]
+
+      text-[#EFBF04]
+
+      opacity-90
+
+      md:text-xs
+
     "
+
   >
 
-    {/* =========================
-        NOS PRODUITS
-    ========================= */}
-    <div className="flex flex-col items-center">
+    NOS PRODUITS
 
-      <div
-        className="
-          mb-8
-          text-[10px]
-          uppercase
-          tracking-[0.4em]
-          text-[#EFBF04]
-          opacity-90
-          md:text-xs
-        "
-      >
-        NOS PRODUITS
-      </div>
+  </div>
 
-      <div className="space-y-4">
+  <div className="space-y-4">
 
-        <p className="text-sm uppercase tracking-wider md:text-base">
-          <span className="font-medium text-white">
-            Valorix
-          </span>
+    <p className="text-sm uppercase tracking-wider md:text-base">
 
-          <span className="mx-3 opacity-20">
-            //
-          </span>
+      <span className="font-medium text-white">
 
-          <span className="text-zinc-400">
-            Web
-          </span>
-        </p>
+        Valorix
 
-        <p className="text-sm uppercase tracking-wider md:text-base">
-          <span className="font-medium text-white">
-            Yua
-          </span>
+      </span>
 
-          <span className="mx-3 opacity-20">
-            //
-          </span>
+      <span className="mx-3 opacity-20">
 
-          <span className="text-zinc-400">
-            Mobile
-          </span>
-        </p>
+        //
 
-      </div>
-    </div>
+      </span>
+
+      <span className="text-zinc-400">
+
+        Web
+
+      </span>
+
+    </p>
+
+    <p className="text-sm uppercase tracking-wider md:text-base">
+
+      <span className="font-medium text-white">
+
+        Yua
+
+      </span>
+
+      <span className="mx-3 opacity-20">
+
+        //
+
+      </span>
+
+      <span className="text-zinc-400">
+
+        Mobile
+
+      </span>
+
+    </p>
+
+  </div>
+
+</div>
 
 
-    {/* =========================
+
+            {/* =========================
         EQUIPE CORE
     ========================= */}
-    <div className="flex flex-col items-center">
+            <div className="flex flex-col items-center">
 
-      <div
-        className="
+              <div
+                className="
           mb-8
           text-[10px]
           uppercase
@@ -591,133 +624,203 @@ export default function Home() {
           opacity-90
           md:text-xs
         "
-      >
-        <u>L'ÉQUIPE CORE</u>
-      </div>
+              >
+                <u>L'ÉQUIPE CORE</u>
+              </div>
 
-      <div className="space-y-4">
+              <div className="space-y-4">
 
-        <p className="text-sm uppercase tracking-wider md:text-base">
-          <span className="font-medium text-white">
-            Jonathan ZELI
-          </span>
+                <p className="text-sm uppercase tracking-wider md:text-base">
+                  <span className="font-medium text-white">
+                    Jonathan ZELI
+                  </span>
 
-          <span className="mx-3 opacity-20">
+                  <span className="mx-3 opacity-20">
             //
-          </span>
+                  </span>
 
-          <span className="text-zinc-400">
-            Commercial
-          </span>
-        </p>
+                  <span className="text-zinc-400">
+                    Commercial
+                  </span>
+                </p>
 
-        <p className="text-sm uppercase tracking-wider md:text-base">
-          <span className="font-medium text-white">
-            Sylvère KOBA
-          </span>
+                <p className="text-sm uppercase tracking-wider md:text-base">
+                  <span className="font-medium text-white">
+                    Sylvère KOBA
+                  </span>
 
-          <span className="mx-3 opacity-20">
+                  <span className="mx-3 opacity-20">
             //
-          </span>
+                  </span>
 
-          <span className="text-zinc-400">
-            Ingénieur Réseau
-          </span>
-        </p>
+                  <span className="text-zinc-400">
+                    Ingénieur Réseau
+                  </span>
+                </p>
 
-        <p className="text-sm uppercase tracking-wider md:text-base">
-          <span className="font-medium text-white">
-            Modeste KOUASSI
-          </span>
+                <p className="text-sm uppercase tracking-wider md:text-base">
+                  <span className="font-medium text-white">
+                    Modeste KOUASSI
+                  </span>
 
-          <span className="mx-3 opacity-20">
+                  <span className="mx-3 opacity-20">
             //
-          </span>
+                  </span>
 
-          <span className="text-zinc-400">
-            Architecte - Programmeur
-          </span>
-        </p>
+                  <span className="text-zinc-400">
+                    Architecte - Programmeur
+                  </span>
+                </p>
 
-      </div>
-    </div>
+              </div>
+            </div>
 
 
-    {/* =========================
-        NOS RÉALISATIONS
-    ========================= */}
-    <div className="flex flex-col items-center">
+            {/* =========================
 
-      <div
-        className="
-          mb-8
-          text-[10px]
-          uppercase
-          tracking-[0.4em]
-          text-[#EFBF04]
-          opacity-90
-          md:text-xs
-        "
-      >
-        NOS RÉALISATIONS
-      </div>
+    NOS RÉALISATIONS
 
-      <div className="space-y-4">
+========================= */}
 
-        <p className="text-sm uppercase tracking-wider md:text-base">
-          <span className="font-medium text-white">
-            <a href="https://www.sparklinegroupe.com" target="_blank" rel="noopener noreferrer">
-              Sparkline Groupe
-            </a>
-          </span>
+<div className="flex flex-col items-end text-right">
 
-          <span className="mx-3 opacity-20">
-            //
-          </span>
+  <div
 
-          <span className="text-zinc-400">
-            Site internet
-          </span>
-        </p>
+    className="
 
-        <p className="text-sm uppercase tracking-wider md:text-base">
-          <span className="font-medium text-white">
-            <a href="https://ayouconsult.com/" target="_blank" rel="noopener noreferrer">
-              Ayou SARL
-            </a>
-          </span>
+      mb-8
 
-          <span className="mx-3 opacity-20">
-            //
-          </span>
+      text-[10px]
 
-          <span className="text-zinc-400">
-            Site internet
-          </span>
-        </p>
+      uppercase
 
-        <p className="text-sm uppercase tracking-wider md:text-base">
-          <span className="font-medium text-white">
-            <a href="https://voixdefemme.org/" target="_blank" rel="noopener noreferrer">
-              Voix de Femme
-            </a>
-          </span>
+      tracking-[0.4em]
 
-          <span className="mx-3 opacity-20">
-            //
-          </span>
+      text-[#EFBF04]
 
-          <span className="text-zinc-400">
-            Site internet
-          </span>
-        </p>
+      opacity-90
 
-      </div>
-    </div>
+      md:text-xs
+
+    "
+
+  >
+
+    NOS RÉALISATIONS
+
+  </div>
+
+  <div className="space-y-4">
+
+    <p className="text-sm uppercase tracking-wider md:text-base">
+
+      <span className="font-medium text-white">
+
+        <a
+
+          href="https://www.sparklinegroupe.com"
+
+          target="_blank"
+
+          rel="noopener noreferrer"
+
+        >
+
+          Sparkline Groupe
+
+        </a>
+
+      </span>
+
+      <span className="mx-3 opacity-20">
+
+        //
+
+      </span>
+
+      <span className="text-zinc-400">
+
+        Site internet
+
+      </span>
+
+    </p>
+
+    <p className="text-sm uppercase tracking-wider md:text-base">
+
+      <span className="font-medium text-white">
+
+        <a
+
+          href="https://ayouconsult.com/"
+
+          target="_blank"
+
+          rel="noopener noreferrer"
+
+        >
+
+          Ayou SARL
+
+        </a>
+
+      </span>
+
+      <span className="mx-3 opacity-20">
+
+        //
+
+      </span>
+
+      <span className="text-zinc-400">
+
+        Site internet
+
+      </span>
+
+    </p>
+
+    <p className="text-sm uppercase tracking-wider md:text-base">
+
+      <span className="font-medium text-white">
+
+        <a
+
+          href="https://voixdefemme.org/"
+
+          target="_blank"
+
+          rel="noopener noreferrer"
+
+        >
+
+          Voix de Femme
+
+        </a>
+
+      </span>
+
+      <span className="mx-3 opacity-20">
+
+        //
+
+      </span>
+
+      <span className="text-zinc-400">
+
+        Site internet
+
+      </span>
+
+    </p>
 
   </div>
 
 </div>
+
+          </div>
+
+        </div>
 
         {/* BOTTOM */}
         <div
