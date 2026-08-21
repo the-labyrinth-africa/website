@@ -752,27 +752,6 @@ export default function Home() {
         <p className="text-xs uppercase tracking-wide sm:text-sm sm:tracking-wider md:text-base">
           <span className="font-medium text-white">
             <a
-              href="https://ayouconsult.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="transition-colors hover:text-[#EFBF04]"
-            >
-              Ayou Consult
-            </a>
-          </span>
-
-          <span className="mx-2 opacity-20 sm:mx-3">
-            //
-          </span>
-
-          <span className="text-zinc-400">
-            Site Web
-          </span>
-        </p>
-
-        <p className="text-xs uppercase tracking-wide sm:text-sm sm:tracking-wider md:text-base">
-          <span className="font-medium text-white">
-            <a
               href="https://voixdefemme.org/"
               target="_blank"
               rel="noopener noreferrer"
